@@ -1,0 +1,14 @@
+Hello stream world
+Enter a number>8 squares is 64
+Enter a number>6 squares is 36
+Enter a number>5 squares is 25
+Enter a number>3 squares is 9
+Enter a number>2 squares is 4
+Enter a number>1 squares is 1
+Enter a number>10 squares is 100
+Enter a number>11 squares is 121
+Enter a number>12 squares is 144
+Enter a number>13 squares is 169
+Enter a number>14 squares is 196
+Enter a number>15 squares is 225
+Enter a number>Bye
