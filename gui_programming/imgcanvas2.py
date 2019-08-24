@@ -1,6 +1,7 @@
+
 from sys import argv
 from tkinter import *
-filename = argv[1] if len(argv) > 1 else 'ble_picture.png'
+filename = argv[1] if len(argv) > 1 else "./images/1.png"
 
 win = Tk()
 img = PhotoImage(filename)

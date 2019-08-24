@@ -1,6 +1,6 @@
-
+imgdir = "./images/"
 from tkinter import *
 win = Tk()
-igm = PhotoImage("../images/d.png")
+igm = PhotoImage(file=imgdir + "1.png")
 Button(win, image=igm).pack(side=TOP, expand=YES, fill=BOTH)
 win.mainloop()
