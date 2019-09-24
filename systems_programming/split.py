@@ -15,7 +15,7 @@ megabytes = kilobytes * 1000
 chunksize = int(1.4 * megabytes)                    # default: roughly a floppy
 
 def split(fromfile, todir, chunksize=chunksize):
-    if not os.path.exist(todir):                    # caller handles errors
+    if not os.path.exists(todir):                    # caller handles errors
         os.mkdir(todir)                             # make dir, read/write parts
     else:
         for fname in os.listdir(todir):             # delete any existing files
@@ -24,6 +24,7 @@ def split(fromfile, todir, chunksize=chunksize):
     input = open(fromfile, 'rb')                    # binary: no decode, endline
     while True:                                     # eof = empty string from read
         chunk = input.read(chunksize)               # get next part <= chunksize
+        if not chunk: break
         partnum += 1
         filename = os.path.join(todir, ('part%04d' % partnum))
         fileobj = open(filename, 'wb')
