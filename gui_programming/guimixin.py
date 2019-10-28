@@ -13,7 +13,7 @@ from tkinter.scrolledtext import ScrolledText       # or scrolledtext
 #from multiprocessing import PortableLauncher, System    # or systems_programming/launchmodes
 
 
-class GUIMixin:
+class GuiMixin:
     def infobox(self, title, text, *args):          # use standard dialog
         return showinfo(title, text)                # *args for bkwd compat
         
