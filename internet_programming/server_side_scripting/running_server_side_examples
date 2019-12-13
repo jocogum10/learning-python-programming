@@ -1,0 +1,15 @@
+Running CGI-based programs requires three pieces of software:
+1. the client, to submit requests: a browser or script - any web browsers can be used as a client (firefox, chrome, internet explorer etc..)
+2. the web server that receives the request - the only missing piece; the intermediate web server
+3. the CGI script, which is run by the server to process the request - we will write CGI scripts,
+urllib.request module can also serve as a web client in scripts
+
+web server options:
+- open source Apache system - provides complete, production-grade web server, also has mod_python extension
+which runs python scripts quickly.
+- access to an account on a web server machine that runs python 3.x (a remote server account)
+- running a local web server - our approach - webserver.py
+
+URL format:
+protocol://networklocation/path;parameters?querystring#fragment
+networklocation - 'user:password@host:port' for FTP and Telnet, 'host:port' for HTTP
